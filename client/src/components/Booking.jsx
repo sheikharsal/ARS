@@ -46,7 +46,7 @@ const Booking = ({ flight }) => {
           className="card-input"
           onChange={(e) => setBcs(e.target.value)}
         />
-        <span>&#8377; {flight.businessClassPrice}</span>
+        <span>&#8377; {flight.businessClassPrice}per person</span>
       </span>
 
       <span className="justify-between">
@@ -57,7 +57,7 @@ const Booking = ({ flight }) => {
           className="card-input"
           onChange={(e) => setEcs(e.target.value)}
         />
-        <span>&#8377; {flight.firstClassPrice}</span>
+        <span>&#8377; {flight.firstClassPrice} per person</span>
       </span>
 
       <span className="justify-between">
@@ -68,7 +68,7 @@ const Booking = ({ flight }) => {
           className="card-input"
           onChange={(e) => setEcs(e.target.value)}
         />
-        <span>&#8377; {flight.economyClassPrice}</span>
+        <span>&#8377; {flight.economyClassPrice}per person</span>
       </span>
 
       <button type="submit" className="nav-btn">

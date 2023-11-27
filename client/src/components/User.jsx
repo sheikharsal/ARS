@@ -50,7 +50,7 @@ const User = () => {
           <p>{userEmail}</p>
         </div>
 
-        {userId !== "6428021c43d03b057250f05b" ? (
+        {userEmail === "arsal18@gmail.com" ? (
           // Admin
           <div className="user-functions flex-row">
             <div className="flex-column">

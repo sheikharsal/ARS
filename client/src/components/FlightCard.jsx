@@ -26,7 +26,7 @@ const FlightCard = ({
         >
           <AiTwotoneStar /> {avgRating}
         </h4>
-        <h4>&#8377; {businessClassPrice} per night</h4>
+        <h4>{description}</h4>
       </div>
     </div>
   );
