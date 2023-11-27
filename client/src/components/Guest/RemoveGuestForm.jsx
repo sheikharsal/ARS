@@ -37,7 +37,7 @@ const RemoveGuestForm = () => {
   return (
     <div className="register">
       <form onSubmit={formik.handleSubmit} className="form">
-        <h2>REMOVE A GUEST FROM DATABASE</h2>
+        <h2>REMOVE A PASSENGER FROM DATABASE</h2>
         <input
           id="id"
           name="id"

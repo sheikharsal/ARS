@@ -54,8 +54,8 @@ const User = () => {
           // Admin
           <div className="user-functions flex-row">
             <div className="flex-column">
-              <Link to="guest-management" className="user-btn">
-                Guest Management
+              <Link to="passenger-management" className="user-btn">
+                Passenger Management
               </Link>
               <Link to="room-management" className="user-btn">
                 Flights Management

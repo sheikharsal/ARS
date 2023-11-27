@@ -61,7 +61,7 @@ const UpdateBookingForm = () => {
   return (
     <div className="booking">
       <form onSubmit={formik.handleSubmit} className="form">
-        <h2>BOOK A ROOM</h2>
+        <h2>BOOK A FLIGHT</h2>
         <input
           id="bookId"
           name="bookId"

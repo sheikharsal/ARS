@@ -56,7 +56,7 @@ const CreateGuestForm = () => {
   return (
     <div className="register">
       <form onSubmit={formik.handleSubmit} className="form">
-        <h2>FILL THE FORM USING GUEST DATA</h2>
+        <h2>FILL THE FORM USING PASSENGER DATA</h2>
         <input
           id="name"
           name="name"

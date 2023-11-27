@@ -11,10 +11,10 @@ import store from "./utils/store";
 import Auth from "./components/Auth";
 import User from "./components/User";
 import RoomManagement from "./components/FlightManagement";
-import GuestManagement from "./components/GuestManagement";
 import ReservationManagement from "./components/ReservationManagement";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import PassengerManagement from "./components/PassengerManagement";
 
 const App = () => {
   return (
@@ -64,8 +64,8 @@ const router = createBrowserRouter([
         element: <RoomManagement />,
       },
       {
-        path: "/user/:id/guest-management",
-        element: <GuestManagement />,
+        path: "/user/:id/passenger-management",
+        element: <PassengerManagement />,
       },
       {
         path: "/user/:id/reservation-management",

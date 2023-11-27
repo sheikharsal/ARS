@@ -58,7 +58,7 @@ const UpdateGuestForm = () => {
   return (
     <div className="register">
       <form onSubmit={formik.handleSubmit} className="form">
-        <h2>UPDATE THE GUEST INFORMATION</h2>
+        <h2>UPDATE THE PASSENGER INFORMATION</h2>
         <input
           id="id"
           name="id"

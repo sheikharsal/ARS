@@ -5,7 +5,7 @@ import CreateGuestForm from "./Guest/CreateGuestForm";
 import RemoveGuestForm from "./Guest/RemoveGuestForm";
 import UpdateGuestForm from "./Guest/UpdateGuestForm";
 
-const GuestManagement = () => {
+const PassengerManagement = () => {
   const [createGuest, setCreateGuest] = useState(false);
   const [removeGuest, setRemoveGuest] = useState(false);
   const [updateGuest, setUpdateGuest] = useState(false);
@@ -42,16 +42,16 @@ const GuestManagement = () => {
 
   return (
     <div className="admin-management-page flex-column">
-      <div className="admin-management-page-heading">Guest Management</div>
+      <div className="admin-management-page-heading">Passenger Management</div>
       <div className="admin-management-page-content">
         <button className="user-btn" onClick={() => handleCreateGuestClick()}>
-          Add a guest
+          Add a passenger
         </button>
         <button className="user-btn" onClick={() => handleRemoveGuestClick()}>
-          Remove a guest
+          Remove a passenger
         </button>
         <button className="user-btn" onClick={() => handleUpdateGuestClick()}>
-          Update a guest
+          Update a passenger
         </button>
       </div>
 
@@ -64,4 +64,4 @@ const GuestManagement = () => {
   );
 };
 
-export default GuestManagement;
+export default PassengerManagement;
