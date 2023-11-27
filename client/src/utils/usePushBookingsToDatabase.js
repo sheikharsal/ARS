@@ -12,7 +12,7 @@ const usePushBookingsToDatabase = () => {
       // destinationCity: booking.destinationCity,
     }));
 
-    const response = await fetch("http://localhost:8080/book-flight", {
+    const response = await fetch(process.env.REACT_APP_API_URL + "/book-flight", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

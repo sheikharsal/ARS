@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function cancelBooking(bookingId) {
-  return fetch(`http://localhost:8080/delete-booking/${bookingId}`, {
+  return fetch(`${process.env.REACT_APP_API_URL}/delete-booking/${bookingId}`, {
     method: "DELETE",
   }).then((data) => data.json());
 }

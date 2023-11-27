@@ -10,7 +10,7 @@ const UserGetAllflightsCard = ({ bookId, flightId, userId }) => {
     try {
       // delete this booked flight
       const response = await fetch(
-        `http://localhost:8080/delete-booking/${bookId}`,
+        `${process.env.REACT_APP_API_URL}/delete-booking/${bookId}`,
         {
           method: "DELETE",
         }

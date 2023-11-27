@@ -27,7 +27,7 @@ export const useTotalCost = () => {
 export const usePushCartToDatabase = async () => {
   const bookings = useSelector((state) => state.booking.bookings);
 
-  const response = await fetch("http://localhost:8080/book-room", {
+  const response = await fetch(process.env.REACT_APP_API_URL + "/book-room", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const useGetFlights = () => {
   const rooms = useSelector((store) => store.flight.flights);
 
   useEffect(() => {
-    fetch("http://localhost:8080/get-all-flights")
+    fetch(process.env.REACT_APP_API_URL + "/get-all-flights")
       .then((response) => response.json())
       .then((data) => dispatch(setFlights(data)));
   }, [dispatch]);

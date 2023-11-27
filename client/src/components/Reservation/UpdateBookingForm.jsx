@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function bookRoom(credentials) {
-  return fetch("http://localhost:8080/update-booking", {
+  return fetch(process.env.REACT_APP_API_URL + "/update-booking", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const useGetAvailableFlights = () => {
   const [bookedFlights, setBookedFlights] = useState();
 
   // useEffect(() => {
-  //   fetch("http://localhost:8080/get-all-bookings")
+  //   fetch(process.env.REACT_APP_API_URL + "/get-all-bookings")
   //     .then((data) => data.json())
   //     .then((data) => setBookedRooms(data));
   // }, []);

@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function registerUser(credentials) {
-  return fetch("http://localhost:8080/register", {
+  return fetch(process.env.REACT_APP_API_URL + "/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

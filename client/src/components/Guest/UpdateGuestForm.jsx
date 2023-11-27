@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function updateUser(credentials) {
-  return fetch("http://localhost:8080/update-user", {
+  return fetch(process.env.REACT_APP_API_URL + "/update-user", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

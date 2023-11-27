@@ -27,7 +27,7 @@ const User = () => {
   }
   useEffect(() => {
     async function getAllBookings() {
-      const response = await fetch("http://localhost:8080/get-all-bookings");
+      const response = await fetch(process.env.REACT_APP_API_URL + "/get-all-bookings");
       const data = await response.json();
 
       const userRooms = data.filter((booking) => {

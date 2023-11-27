@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function deleteUser(credentials) {
-  return fetch("http://localhost:8080/delete-user", {
+  return fetch(process.env.REACT_APP_API_URL + "/delete-user", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

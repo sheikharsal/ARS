@@ -11,8 +11,9 @@ app.use(cors());
 const port = 8080;
 
 // Connect to MongoDB
-const dbURL = "mongodb://127.0.0.1:27017/flyDB";
-// "mongodb+srv://siddharth:7s3XnilcOgUSNFEs@cluster0.xg2bger.mongodb.net/userDB?retryWrites=true&w=majority";
+const dbURL = 
+// "mongodb://127.0.0.1:27017/flyDB";
+"mongodb+srv://siddharth:7s3XnilcOgUSNFEs@cluster0.xg2bger.mongodb.net/flyDB?retryWrites=true&w=majority";
 mongoose
   .connect(dbURL, {
     useNewUrlParser: true,

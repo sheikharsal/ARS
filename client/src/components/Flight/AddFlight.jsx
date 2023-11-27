@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 
 async function addFlight(credentials) {
-  return fetch("http://localhost:8080/add-flight", {
+  return fetch(process.env.REACT_APP_API_URL + "/add-flight", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

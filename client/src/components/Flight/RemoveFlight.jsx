@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 async function removeFlight(id) {
-  return fetch(`http://localhost:8080/remove-flight/${id}`, {
+  return fetch(`${process.env.REACT_APP_API_URL}/remove-flight/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",

@@ -26,7 +26,7 @@ const usePayment = (cost) => {
         return;
       }
 
-      const result = await axios.post("http://localhost:8080/payment/orders", {
+      const result = await axios.post(process.env.REACT_APP_API_URL + "/payment/orders", {
         amount: cost,
       });
 
@@ -55,7 +55,7 @@ const usePayment = (cost) => {
           };
 
           const result = await axios.post(
-            "http://localhost:8080/payment/success",
+            process.env.REACT_APP_API_URL + "/payment/success",
             data
           );
 
